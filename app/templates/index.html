@@ -142,18 +142,20 @@
 		background-color: #ED1B33;
 		color: white;
 	}
-	.container {
-  height: 200px;
+.container { 
+  height: 20px;
   position: relative;
-  border: 3px solid green;
+  border: 3px solid green; 
+  border-color: #ff0000;
 }
 
-.vertical-center {
+.center {
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 	</style>
 </head>
@@ -220,24 +222,22 @@
 	</form>
 <hr size="3" width="186" align="center">
 <hr size="3" noshade>
-	
-	<div class="container">
-  <div class="vertical-center">
+<div class="container">
+  <div class="center">
    <a href="{{ url_for('analysis') }}">
        <button>CHECK FOR ANALYSIS</button>
      </a>
   </div>
 </div>
-	<form method="POST" action = "analysis.html"  align="center">
-	  <input type="submit" value="CHECK FOR ANALYSIS" name="submit_button" >
-	</form>
-     <a href="analysis.html">
-       <button>Click Me</button>
+<div class="container">
+  <div class="center">
+   <a href="{{ url_for('prediction') }}">
+       <button>START YOUR PREDICTION</button>
      </a>
-	
-<a href="{{ url_for('analysis') }}">
-       <button>Click Me</button>
-     </a>
+  </div>
+</div>
+
+
 <hr size="3" width="186" align="center">
 <footer>
 	<p>Contributors:</p>
