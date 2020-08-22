@@ -9,6 +9,9 @@ def index():
 @app.route("/analysis")
 def analysis():
     return render_template ("analysis.html")
+@app.route("/prediction")
+def prediction():
+    return render_template ("Start Predictions.html")
 def contact():
     if request.method == 'POST':
         if request.form['submit_button'] == 'START YOUR PREDICTION':
