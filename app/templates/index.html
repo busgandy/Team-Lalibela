@@ -146,7 +146,7 @@
   height: 20px;
   position: relative;
   border: 3px solid green; 
-  border-color: #ff0000;
+  border-color: #ED1B33;
 }
 
 .center {
@@ -217,11 +217,7 @@
    </div>
 </div>
 <hr size="3" noshade>
-	<form method="POST" action = "Start Predictions.html"  align="center">
-	  <input type="submit" value="START YOUR PREDICTION" name="submit_button" >
-	</form>
-<hr size="3" width="186" align="center">
-<hr size="3" noshade>
+
 <div class="container">
   <div class="center">
    <a href="{{ url_for('analysis') }}">
@@ -229,6 +225,7 @@
      </a>
   </div>
 </div>
+<hr size="3" noshade>
 <div class="container">
   <div class="center">
    <a href="{{ url_for('prediction') }}">
