@@ -6,10 +6,9 @@ app = Flask(__name__)
 def index():
     return render_template ("index.html")
 
-@app.route("/analysis", methods = ["GET", "POST"])
+@app.route("/analysis")
 def analysis():
-        if request.method == 'POST':
-            return render_template ("analysis.html")
+    return render_template ("analysis.html")
 def contact():
     if request.method == 'POST':
         if request.form['submit_button'] == 'START YOUR PREDICTION':
