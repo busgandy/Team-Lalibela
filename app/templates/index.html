@@ -142,6 +142,19 @@
 		background-color: #ED1B33;
 		color: white;
 	}
+	.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 	</style>
 </head>
 
@@ -207,6 +220,14 @@
 	</form>
 <hr size="3" width="186" align="center">
 <hr size="3" noshade>
+	
+	<div class="container">
+  <div class="vertical-center">
+   <a href="{{ url_for('analysis') }}">
+       <button>CHECK FOR ANALYSIS</button>
+     </a>
+  </div>
+</div>
 	<form method="POST" action = "analysis.html"  align="center">
 	  <input type="submit" value="CHECK FOR ANALYSIS" name="submit_button" >
 	</form>
