@@ -10,7 +10,7 @@ def index():
 def analysis():
     return render_template ("analysis.html")
 def contact():
-    if request.method == 'POST':
+    if request.method == 'GET':
         if request.form['submit_button'] == 'START YOUR PREDICTION':
             return render_template ("analysis.html")
         elif request.form['submit_button'] == 'CHECK FOR ANALYSIS':
