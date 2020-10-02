@@ -195,8 +195,19 @@
       <label for="slide4"></label>
    </div>
 </div>
+<div>
+	<form action="{{ url for ("predict") }} method =  "post">
+		<input type="text" name= "experience" placeholder = "Experience" required="required" /> 
+		<input type="text" name= "text_score" placeholder = "Text Score" required="required" />
+		<input type="text" name= "interview_score" placeholder = "Interview Score" required="required" />
+		<br>										    
+		<input type="submit" name="submit" id="submit" value="Submit">
+									     </form>
+<br>
+<br>
+									    
+{{ prediction_text }}									     
 
-<input type="text"> 
-	<input type="submit" name="submit" id="submit" value="Submit">
+</div>	
 </body>
 </html>
